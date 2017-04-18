@@ -16,7 +16,8 @@ defmodule UpdateExcess do
     File.stream!("/tmp/indice_de_excesos.csv") |>
     CSV.decode(separator: ?\n) |>
     Enum.map(fn row ->
-      Enum.map(row, &IO.puts/1)
+      String.split(row)
+      # IO.puts(row)
     end)
   end
 
