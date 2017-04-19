@@ -28,6 +28,9 @@ defmodule UpdateExcess.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:csv, "~> 1.4.2"}]
+    [
+      {:csv, "~> 1.4.2"},
+      {:poison, "~> 3.0"},
+    ]
   end
 end
